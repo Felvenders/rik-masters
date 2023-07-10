@@ -27,7 +27,7 @@ public class DriverAccountService {
     Logger logger = LoggerFactory.getLogger(DriverAccountService.class);
 
     // Поздравление водителя с днем рождения
-    @Scheduled(cron = "0 0 9 * * *") // Запуск каждый день в 9:00 утра
+    @Scheduled(cron = "0 0 8 * * *") // Запуск каждый день в 8:00 утра
     public void congratulateDrivers() {
         LocalDate currentDate = LocalDate.now();
         List<Driver> drivers = driverRepository.findByBirthDate(currentDate.getMonthValue(), currentDate.getDayOfMonth());

@@ -27,7 +27,7 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 public class DriverAccountServiceTest {
 
-    @Mock
+    @MockBean
     private Logger logger;
 
     @MockBean
